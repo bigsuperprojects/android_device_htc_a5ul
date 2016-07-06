@@ -25,9 +25,16 @@
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
-
+#TARGET_GCC_VERSION:=5.3
 # Inherit from common a5-common
 -include device/htc/a5-common/BoardConfigCommon.mk
+
+#special sauce
+TARGET_GCC_VERSION_EXP := 5.3
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-5.3/bin
+TARGET_TOOLCHAIN_ROOT := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-5.3/bin
+WITH_DEXPREOPT := false
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := htc_a5,htc_a5tl,htc_a5chl,htc_a5ul,a5,a5tl,a5chl,a5ul
