@@ -46,6 +46,9 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     nfc_nci.pn54x.default 
 
+PRODUCT_PACKAGES += \
+    Gello
+
 # Overrides
 PRODUCT_COPY_FILES_OVERRIDES := \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
