@@ -38,10 +38,13 @@ AUDIO_FEATURE_DISABLED_MULTI_VOICE_SESSIONS := true
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../device/htc/a5ul/ril
+TARGET_RIL_VARIANT := 
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_LIBINIT_DEFINES_FILE := device/htc/a5ul/init/init_a5ul.cpp
+TARGET_INIT_VENDOR_LIB := libinit_a5ul
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a5ul
 
 # Inherit from the proprietary version
 -include vendor/htc/a5ul/BoardConfigVendor.mk

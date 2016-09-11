@@ -18,7 +18,7 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # make MTP,ADB happier
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/init.qcom.usb.rc:root/init.qcom.usb.rc
+#PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/init.qcom.usb.rc:root/init.qcom.usb.rc
 
 # Inherit from a5-common
 $(call inherit-product, device/htc/a5-common/a5-common.mk)
@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     com.android.nfc_extras \
-    nfc_nci.pn54x.default
+    nfc_nci.pn54x.default 
 
 # Overrides
 PRODUCT_COPY_FILES_OVERRIDES := \
