@@ -35,6 +35,10 @@ else
     NFCEE_ACCESS_PATH := $(LOCAL_PATH)/configs/nfcee_access_debug.xml
 endif
 
+# See https://github.com/CyanogenMod/android_external_libnfc-nci/blob/cm-14.1/halimpl/pn54x/Android.mk#L21
+# for magic values of NXP_CHIP_TYPE.
+NXP_CHIP_TYPE := 1
+
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
@@ -44,9 +48,8 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     com.android.nfc_extras \
-    nfc_nci_msm8226
+    nfc_nci.pn54x.default 
 
 # Overrides
 PRODUCT_COPY_FILES_OVERRIDES := \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml

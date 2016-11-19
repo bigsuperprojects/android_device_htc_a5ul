@@ -42,11 +42,16 @@ void cdma_properties(char const default_cdma_sub[], char const default_network[]
     property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
     property_set("ro.telephony.default_network", default_network);
     property_set("telephony.lteOnCdmaDevice", "1");
-    property_set("ro.ril.svdo", "true");
-    property_set("ro.ril.disable.fd.plmn.prefix", "23402,23410,23411,23420");
     property_set("ro.ril.enable.sdr", "0");
     property_set("ro.ril.enable.gea3", "1");
+    property_set("ro.ril.enable.r8fd", "1");
+    property_set("ro.ril.enable.a52", "0");
     property_set("ro.ril.enable.a53", "1");
+    property_set("ro.ril.disable.fd.plmn.prefix", "23402,23410,23411,23420");
+    property_set("ro.ril.fast.dormancy.cdma.rule", "0");
+    property_set("ro.ril.pdpnumber.policy.roaming", "3");
+    property_set("ro.ril.air.enabled", "0");
+    property_set("ro.ril.gsm.to.lte.blind.redir", "0");
     property_set("persist.radio.snapshot_enabled", "1");
     property_set("persist.radio.snapshot_timer", "22");
 }

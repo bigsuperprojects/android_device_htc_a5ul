@@ -2,4 +2,3 @@ rild.libargs=-d /dev/smd0
 ro.com.android.dataroaming=false
 persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
-
