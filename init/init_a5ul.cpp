@@ -103,7 +103,7 @@ void vendor_load_properties()
         property_set("gsm.operator.numeric", "000000");
         property_set("gsm.sim.operator.alpha", "Chameleon");
         property_set("gsm.operator.alpha", "Chameleon");
-        property_set("ro.cdma.home.operator.numeric", "311490");
+        property_set("ro.cdma.home.operator.numeric", "310120");
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile"); 
         property_set("ro.home.operator.carrierid", "Sprint"); 
         property_set("ro.ril.oem.ecclist", "911");

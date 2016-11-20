@@ -34,14 +34,14 @@
          <EriInfo RoamingIndicator="0"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="Virgin Mobile"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="1"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="Virgin Mobile"
                   CallPromptId="0"
                   AlertId="0"/>
 
@@ -300,7 +300,7 @@
          <EriInfo RoamingIndicator="99"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="Virgin Mobile"
                   CallPromptId="0"
                   AlertId="0"/>
 
@@ -468,7 +468,7 @@
          <EriInfo RoamingIndicator="123"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="Virgin Mobile"
                   CallPromptId="0"
                   AlertId="0"/>
 
