@@ -1,2 +1,2 @@
-add_lunch_combo cm_a5ul-eng
-add_lunch_combo cm_a5ul-userdebug
+add_lunch_combo lineage_a5ul-eng
+add_lunch_combo lineage_a5ul-userdebug
