@@ -1,0 +1,5 @@
+/dev/block/mmcblk0p43 /system ext4 rw 0 0
+/dev/block/mmcblk0p42 /cache ext4 rw 0 0
+/dev/block/mmcblk0p44 /data ext4 rw 0 0
+/dev/block/mmcblk1 /external_sd ext4 rw 0 0
+ /usb-otg vfat rw 0 0
