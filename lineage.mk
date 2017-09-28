@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.x
 
 $(call inherit-product, device/htc/a5ul/full_a5ul.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_a5ul
+PRODUCT_NAME := lineage_a5ul

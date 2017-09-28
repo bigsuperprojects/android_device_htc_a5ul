@@ -32,10 +32,12 @@
 #include <unistd.h>
 #include <fstream>
 
+#include <android-base/properties.h>
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
+using android::base::GetProperty;
 
 void cdma_properties(char const default_cdma_sub[], char const default_network[])
 {
@@ -71,11 +73,11 @@ void gsm_properties(char const default_network[])
 
 void vendor_load_properties()
 {
-    std::string platform = property_get("ro.board.platform");
+    std::string platform = GetProperty("ro.board.platform","");
     if (platform != ANDROID_TARGET)
         return;
 
-    std::string bootmid = property_get("ro.boot.mid");
+    std::string bootmid = GetProperty("ro.boot.mid","");
     if (bootmid == "0P9C10000") {
         /* a5tl */
         gsm_properties("9");
@@ -126,6 +128,6 @@ void vendor_load_properties()
         property_set("ro.ril.enable.gea3", "1");
         property_set("ro.ril.gsm.to.lte.blind.redir", "1");
     }
-      std::string device = property_get("ro.product.device"); 
-      ERROR("Found bootmid %s setting build properties for %s device\n", bootmid.c_str(), device.c_str());
+      std::string device = GetProperty("ro.product.device",""); 
+      LOG(ERROR) << "Found bootmid '" << bootmid.c_str() << "' setting build properties for '" << device.c_str() << "' device\n";
 }
