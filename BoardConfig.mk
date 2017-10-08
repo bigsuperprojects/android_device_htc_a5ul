@@ -40,6 +40,9 @@ endif
 # Audio
 AUDIO_FEATURE_DISABLED_MULTI_VOICE_SESSIONS := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := device/htc/a5ul/manifest.xml
+
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_PROVIDES_RILD := true

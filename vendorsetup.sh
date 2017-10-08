@@ -1,2 +1,0 @@
-add_lunch_combo cm_a5ul-eng
-add_lunch_combo cm_a5ul-userdebug

@@ -22,3 +22,4 @@ $(call inherit-product, device/htc/a5ul/full_a5ul.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_a5ul
+
